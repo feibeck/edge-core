@@ -1,6 +1,6 @@
 {
   "name": "fedge-core",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Core JavaScript Infrastructure for Edge. Part of the Edge Platform.",
   "main": "lib/node.es5.cjs.js",
   "module": "lib/node.es5.esm.js",
