@@ -28,7 +28,8 @@ export default function createKernel(State, { state = defaultState, edge, reques
 
   let router = createReduxRouter(
     State.getRoutes(),
-    request ? request.path : null
+    request ? request.path : null,
+    State.getRouterConfig ? State.getRouterConfig() : {}
   )
 
   let apollo = createApolloClient({
