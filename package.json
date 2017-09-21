@@ -1,8 +1,7 @@
 {
   "name": "fedge-core",
-  "version": "0.7.0",
-  "description":
-    "Core JavaScript Infrastructure for Edge. Part of the Edge Platform.",
+  "version": "0.8.0",
+  "description": "Core JavaScript Infrastructure for Edge. Part of the Edge Platform.",
   "main": "lib/node.es5.cjs.js",
   "module": "lib/node.es5.esm.js",
   "browser": "lib/browser.es5.esm.js",
@@ -13,12 +12,9 @@
     "size": "npm run prepack && size-limit",
     "test": "jest",
     "prepack": "rimraf lib && prepublish",
-    "release":
-      "git push && release-it --github.release --npm.publish --non-interactive",
-    "release:minor":
-      "git push && release-it --github.release --npm.publish --non-interactive --increment minor",
-    "release:major":
-      "git push && release-it --github.release --npm.publish --non-interactive --increment major"
+    "release": "git push && release-it --github.release --npm.publish --non-interactive",
+    "release:minor": "git push && release-it --github.release --npm.publish --non-interactive --increment minor",
+    "release:major": "git push && release-it --github.release --npm.publish --non-interactive --increment major"
   },
   "engines": {
     "node": ">=6.0.0",
